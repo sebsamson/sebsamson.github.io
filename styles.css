@@ -84,7 +84,7 @@ img {
 	border-radius: 10px;
 }
 
-.image-container {
+div.image-container {
     width: 50%;
     float: left;
 }
