@@ -84,6 +84,11 @@ img {
 	border-radius: 10px;
 }
 
+.image-container {
+    width: 50%;
+    float: left;
+}
+
 a {
     color: var(--blue);
     text-decoration: none;
