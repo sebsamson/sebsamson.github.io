@@ -77,11 +77,16 @@ body {
     margin-left: 20px;
 }
 
-div.portrait img {
+div.portrait {
     max-width: 200px;
     float: left;
     margin-right: 20px;
-	border-radius: 10px;
+    border-radius: 10px;
+}
+
+div.portrait img {
+    width: 100%;
+    height: auto;
 }
 
 div.image-container {
@@ -89,7 +94,7 @@ div.image-container {
     float: left;
     margin-right: 20px;
     border-radius: 10px;
-    overflow: hidden;
+    
 }
 
 div.image-container img {
