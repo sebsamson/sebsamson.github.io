@@ -87,6 +87,14 @@ img {
 div.image-container {
     width: 50%;
     float: left;
+    margin-right: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+div.image-container img {
+    width: 100%;
+    height: auto;
 }
 
 a {
