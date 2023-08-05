@@ -77,7 +77,7 @@ body {
     margin-left: 20px;
 }
 
-img {
+div.portrait img {
     max-width: 200px;
     float: left;
     margin-right: 20px;
