@@ -77,6 +77,10 @@ body {
     margin-left: 20px;
 }
 
+img {
+border-radius: 10px;	
+}
+
 div.portrait {
     max-width: 200px;
     float: left;
