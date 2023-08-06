@@ -93,30 +93,23 @@ div.portrait img {
     height: auto;
 }
 
-div.image-container {
-    width: 50%;
-    float: left;
-    margin-right: 20px;
-    border-radius: 10px;
-    
-}
 
-div.image-container img {
-    width: 100%;
-    height: auto;
-}
+
+div.image-container,
 div.image-container-right {
-    width: 50%;
-    float: right;
-    margin-right: 20px;
-    border-radius: 10px;
-    
+  width: 50%;
+  float: left;
+  margin-right: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
 }
 
+div.image-container img,
 div.image-container-right img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
+
 
 a {
     color: var(--blue);
