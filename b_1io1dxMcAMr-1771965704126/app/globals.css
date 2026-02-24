@@ -1,0 +1,60 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-sans: var(--font-inter);
+    --font-serif: var(--font-playfair);
+    --background: 42 32% 97%;
+    --foreground: 224 22% 12%;
+    --card: 0 0% 100%;
+    --card-foreground: 224 22% 12%;
+    --primary: 224 22% 12%;
+    --primary-foreground: 42 32% 97%;
+    --secondary: 38 23% 92%;
+    --secondary-foreground: 224 22% 12%;
+    --muted: 38 23% 92%;
+    --muted-foreground: 220 10% 42%;
+    --accent: 14 68% 46%;
+    --accent-foreground: 0 0% 100%;
+    --border: 220 15% 86%;
+    --input: 220 15% 86%;
+    --ring: 224 22% 12%;
+    --radius: 0.6rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    background-image: radial-gradient(circle at top right, hsl(36 40% 92% / 0.45), transparent 55%);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .section-enter {
+    animation: section-enter 340ms ease-out both;
+  }
+}
+
+@keyframes section-enter {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
