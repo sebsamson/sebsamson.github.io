@@ -1,5 +1,5 @@
 ﻿import type { Metadata } from "next"
-import { ArrowUpRight, Download, Mail } from "lucide-react"
+import { ArrowUpRight, CalendarDays, Download, Mail } from "lucide-react"
 import { SiteFooter } from "@/components/site-footer"
 import { SiteHeader } from "@/components/site-header"
 import { CONTACT_CONTENT, SITE_URL } from "@/content/core-content"
@@ -25,11 +25,14 @@ export default function ContactPage() {
                 <h2 className="mb-6 text-xl font-semibold">Direct actions</h2>
                 <div className="flex flex-col gap-4">
                   {CONTACT_CONTENT.directActions.map((action) => {
-                    const isPrimary = action.label === "Book an intro call"
+                    const isPrimary = action.label === "Contact Me"
                     const isLinkedIn = action.label === "Connect on LinkedIn"
+                    const isCalendar = action.label === "Schedule via Google Calendar"
                     const icon = isLinkedIn ? (
                       <ArrowUpRight className="h-4 w-4" />
-                    ) : action.label === "Download one-pager" ? (
+                    ) : isCalendar ? (
+                      <CalendarDays className="h-4 w-4" />
+                    ) : action.label === "Download CV" ? (
                       <Download className="h-4 w-4" />
                     ) : (
                       <Mail className="h-4 w-4" />

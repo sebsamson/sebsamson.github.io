@@ -1,12 +1,14 @@
 ﻿import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight, Download, Mail } from "lucide-react"
+import { ArrowRight, CalendarDays, Download } from "lucide-react"
 import { CTAStrip } from "@/components/cta-strip"
+import { ExperienceBio } from "@/components/experience-bio"
 import { SiteFooter } from "@/components/site-footer"
 import { SiteHeader } from "@/components/site-header"
+import { EMPLOYERS } from "@/content/employers"
 import {
+  CALENDAR_HREF,
   HOME_CONTENT,
-  INTRO_CALL_HREF,
   ONE_PAGER_HREF,
   SITE_URL,
 } from "@/content/core-content"
@@ -20,6 +22,12 @@ export const metadata: Metadata = {
 }
 
 export default function HomePage() {
+  const employerLogos = EMPLOYERS.map((employer) => ({
+    company: employer.company,
+    logoSrc: employer.logoSrc,
+    logoAlt: employer.logoAlt,
+  }))
+
   return (
     <>
       <SiteHeader currentPath="/" />
@@ -39,16 +47,19 @@ export default function HomePage() {
               <h1 className="mb-4 text-balance font-serif text-3xl font-semibold leading-tight md:text-5xl">
                 {HOME_CONTENT.heroTitle}
               </h1>
-              <p className="mb-8 max-w-2xl text-lg leading-relaxed text-muted-foreground">
+              <p className="mb-4 max-w-2xl text-lg leading-relaxed text-muted-foreground">
                 {HOME_CONTENT.heroLead}
               </p>
+              <ExperienceBio />
               <div className="flex flex-col gap-4 sm:flex-row">
                 <a
-                  href={INTRO_CALL_HREF}
+                  href={CALENDAR_HREF}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 rounded-md bg-foreground px-6 py-3 text-sm font-medium text-background transition-transform duration-200 hover:-translate-y-0.5"
                 >
-                  <Mail className="h-4 w-4" />
-                  Book an intro call
+                  <CalendarDays className="h-4 w-4" />
+                  Schedule a call
                   <ArrowRight className="h-4 w-4" />
                 </a>
                 <a
@@ -56,7 +67,7 @@ export default function HomePage() {
                   className="inline-flex items-center justify-center gap-2 rounded-md border border-border px-6 py-3 text-sm font-medium transition-colors hover:bg-secondary"
                 >
                   <Download className="h-4 w-4" />
-                  Download one-pager
+                  Download CV
                 </a>
               </div>
             </div>
@@ -121,6 +132,30 @@ export default function HomePage() {
           <div className="mx-auto max-w-5xl px-6">
             <h2 className="mb-6 font-serif text-2xl font-semibold md:text-3xl">Where I have done it</h2>
             <p className="mb-6 max-w-3xl leading-relaxed text-muted-foreground">{HOME_CONTENT.whereDoneIt}</p>
+            <ul className="mb-5 flex flex-wrap items-center gap-4">
+              {employerLogos.map((employer) => (
+                <li
+                  key={employer.company}
+                  title={employer.company}
+                  className="relative h-10 w-10 overflow-hidden rounded bg-card ring-1 ring-border/60"
+                >
+                  <Image src={employer.logoSrc} alt={employer.logoAlt} fill className="object-contain p-1" />
+                </li>
+              ))}
+            </ul>
+            <ul className="mb-6 flex flex-wrap items-center gap-5">
+              {HOME_CONTENT.experienceTools.map((tool) => (
+                <li key={tool.label}>
+                  <Image
+                    src={tool.src}
+                    alt={tool.alt}
+                    width={tool.width}
+                    height={tool.height}
+                    className="h-10 w-10 object-contain md:h-12 md:w-12"
+                  />
+                </li>
+              ))}
+            </ul>
             <Link href="/games" className="inline-flex items-center gap-2 text-sm font-medium hover:text-accent">
               View full professional credits
               <ArrowRight className="h-4 w-4" />

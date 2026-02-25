@@ -1,5 +1,6 @@
-﻿import { ArrowUpRight, Download, Mail } from "lucide-react"
+﻿import { ArrowUpRight, CalendarDays, Download, Mail } from "lucide-react"
 import {
+  CALENDAR_HREF,
   FOOTER_LEGAL_TEXT,
   INTRO_CALL_HREF,
   LINKEDIN_HREF,
@@ -16,14 +17,23 @@ export function SiteFooter() {
             className="inline-flex items-center gap-2 rounded-md bg-foreground px-5 py-2.5 text-sm font-medium text-background transition-transform duration-200 hover:-translate-y-0.5"
           >
             <Mail className="h-4 w-4" />
-            Book an intro call
+            Contact Me
+          </a>
+          <a
+            href={CALENDAR_HREF}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-md border border-border px-5 py-2.5 text-sm font-medium transition-colors hover:bg-secondary"
+          >
+            <CalendarDays className="h-4 w-4" />
+            Schedule a call
           </a>
           <a
             href={ONE_PAGER_HREF}
             className="inline-flex items-center gap-2 rounded-md border border-border px-5 py-2.5 text-sm font-medium transition-colors hover:bg-secondary"
           >
             <Download className="h-4 w-4" />
-            Download one-pager
+            Download CV
           </a>
           <a
             href={LINKEDIN_HREF}

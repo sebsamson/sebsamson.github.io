@@ -23,8 +23,9 @@ export const NAV_LINKS: NavLink[] = [
 ]
 
 export const INTRO_CALL_HREF = "mailto:contact@sebsamson.com?subject=Intro%20Call"
-export const ONE_PAGER_HREF = "/pdf/CV 1 page - Sebastien Samson.pdf"
+export const ONE_PAGER_HREF = "/pdf/Sebastien_Samson_CV.pdf"
 export const LINKEDIN_HREF = "https://www.linkedin.com/in/sebsamson"
+export const CALENDAR_HREF = "https://calendar.app.google/Aucpd6NmjbAGRBe8A"
 
 export const FOOTER_LEGAL_TEXT =
   "All product names, logos, brands, and images are property of their respective owners and are used here for identification and portfolio purposes only. This site is not affiliated with or endorsed by the respective publishers or rights holders."
@@ -74,7 +75,23 @@ export const HOME_CONTENT = {
     },
   ] satisfies SelectedOutcome[],
   whereDoneIt:
-    "Selected credits include work across VR, mobile F2P, and live operations with Kluge Interactive, Jam City/Ludia, EA/Slightly Mad Studios, LEGO, Bigpoint, Frima, and Ubisoft.",
+    "Selected credits include work across VR, mobile F2P, and live operations with teams from startup to AAA scale.",
+  experienceTools: [
+    {
+      label: "Unity",
+      src: "/images/unity-icon.png",
+      alt: "Unity logo",
+      width: 398,
+      height: 398,
+    },
+    {
+      label: "Unreal Engine",
+      src: "/images/Unreal_Engine-Logo.wine.png",
+      alt: "Unreal Engine logo",
+      width: 1399,
+      height: 1447,
+    },
+  ],
   closingCta:
     "Need clarity before your next milestone? I can help you make the next decisions explicit and executable.",
 }
@@ -220,9 +237,10 @@ export const CONTACT_CONTENT = {
   intro:
     "If you need fast clarity on product direction, roadmap priorities, or leadership alignment, reach out directly.",
   directActions: [
-    { label: "Book an intro call", href: INTRO_CALL_HREF },
+    { label: "Contact Me", href: INTRO_CALL_HREF },
+    { label: "Schedule via Google Calendar", href: CALENDAR_HREF, external: true },
     { label: "Connect on LinkedIn", href: LINKEDIN_HREF, external: true },
-    { label: "Download one-pager", href: ONE_PAGER_HREF },
+    { label: "Download CV", href: ONE_PAGER_HREF },
   ] satisfies ContactAction[],
   engagementFitChecklist: [
     "You have a milestone or release window that needs tighter priorities.",
@@ -270,6 +288,30 @@ export const WRITINGS_CONTENT = {
     {
       title: "Game Design Theory",
       items: [
+        {
+          title: "Series: The Promise Framework",
+          tag: "2026 | Framework | Vision, Delivery",
+          summary:
+            "A practical framework to keep game vision coherent from early pitch through live operations, with concrete guardrails teams can use during prioritization and execution.",
+          links: [
+            {
+              label: "Read article (PDF)",
+              href: "/pdf/Series_%20The%20Promise%20Framework%20%E2%80%94%20Keeping%20Game%20Vision%20Coherent%20from%20Pitch%20to%20Live%20Ops.pdf",
+            },
+          ],
+        },
+        {
+          title: "Debugging Player Learning",
+          tag: "2026 | Framework | Onboarding, UX",
+          summary:
+            "A six-step diagnostic approach for identifying where players hit friction while learning mechanics, then turning those findings into targeted design fixes.",
+          links: [
+            {
+              label: "Read article (PDF)",
+              href: "/pdf/Debugging%20Player%20Learning_%20A%206-Step%20Framework%20for%20Finding%20%E2%80%9CFriction%E2%80%9D%20in%20Your%20Mechanics.pdf",
+            },
+          ],
+        },
         {
           title: "Flow and Difficulty Adjustment in Video Games",
           tag: "2010 | Flow, Player Experience",

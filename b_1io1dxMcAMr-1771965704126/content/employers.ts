@@ -2,10 +2,27 @@
 
 export const EMPLOYERS: EmployerEntry[] = [
   {
+    company: "Fiction Pact Studio",
+    logoSrc: "/images/PictionPactLogo.png",
+    logoAlt: "Fiction Pact Studio logo",
+    rolePeriod: "Jan 2026-present - Founder",
+    intro:
+      "Founder of Fiction Pact Studio, a game studio built around the promise of creating something new that was never possible before. Ontario, Canada (Remote).",
+    items: [
+      {
+        label: "VR, PC, Unreal, UGC, Gaussian Splatting.",
+      },
+      {
+        label: "Fiction Pact",
+        href: "https://fictionpactstudio.github.io/project/",
+      },
+    ],
+  },
+  {
     company: "Kluge Interactive",
     logoSrc: "/images/logos/kluge.png",
     logoAlt: "Kluge Interactive logo",
-    rolePeriod: "Oct 2023-present - Game Design Director",
+    rolePeriod: "Oct 2023-Dec 2025 - Game Design Director",
     items: [
       {
         label:
