@@ -1,5 +1,6 @@
-﻿import type { Metadata } from "next"
-import { ArrowUpRight, CalendarDays, Download, Mail } from "lucide-react"
+import Image from "next/image"
+import type { Metadata } from "next"
+import { CalendarDays, Download, Mail } from "lucide-react"
 import { SiteFooter } from "@/components/site-footer"
 import { SiteHeader } from "@/components/site-header"
 import { CONTACT_CONTENT, SITE_URL } from "@/content/core-content"
@@ -25,11 +26,25 @@ export default function ContactPage() {
                 <h2 className="mb-6 text-xl font-semibold">Direct actions</h2>
                 <div className="flex flex-col gap-4">
                   {CONTACT_CONTENT.directActions.map((action) => {
-                    const isPrimary = action.label === "Contact Me"
                     const isLinkedIn = action.label === "Connect on LinkedIn"
                     const isCalendar = action.label === "Schedule via Google Calendar"
+                    const isGoFractional = action.label === "Hire me on GO Fractional"
                     const icon = isLinkedIn ? (
-                      <ArrowUpRight className="h-4 w-4" />
+                      <Image
+                        src="/images/LinkedIn_icon.png"
+                        alt="LinkedIn logo"
+                        width={16}
+                        height={16}
+                        className="h-4 w-4 object-contain"
+                      />
+                    ) : isGoFractional ? (
+                      <Image
+                        src="/images/go_fractional.jpg"
+                        alt="GO Fractional logo"
+                        width={16}
+                        height={16}
+                        className="h-4 w-4 rounded-sm object-cover"
+                      />
                     ) : isCalendar ? (
                       <CalendarDays className="h-4 w-4" />
                     ) : action.label === "Download CV" ? (
@@ -45,8 +60,8 @@ export default function ContactPage() {
                         target={action.external ? "_blank" : undefined}
                         rel={action.external ? "noopener noreferrer" : undefined}
                         className={
-                          isPrimary
-                            ? "inline-flex items-center gap-3 rounded-md bg-foreground px-5 py-3 text-sm font-medium text-background transition-transform duration-200 hover:-translate-y-0.5"
+                          isGoFractional
+                            ? "inline-flex items-center gap-3 rounded-md border border-accent bg-accent px-5 py-3 text-sm font-medium text-accent-foreground transition-opacity hover:opacity-90"
                             : "inline-flex items-center gap-3 rounded-md border border-border px-5 py-3 text-sm font-medium transition-colors hover:bg-secondary"
                         }
                       >

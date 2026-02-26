@@ -8,6 +8,7 @@ import { SiteHeader } from "@/components/site-header"
 import { EMPLOYERS } from "@/content/employers"
 import {
   CALENDAR_HREF,
+  GO_FRACTIONAL_HREF,
   HOME_CONTENT,
   ONE_PAGER_HREF,
   SITE_URL,
@@ -61,6 +62,15 @@ export default function HomePage() {
                   <CalendarDays className="h-4 w-4" />
                   Schedule a call
                   <ArrowRight className="h-4 w-4" />
+                </a>
+                <a
+                  href={GO_FRACTIONAL_HREF}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 rounded-md border border-accent bg-accent px-6 py-3 text-sm font-medium text-accent-foreground transition-opacity hover:opacity-90"
+                >
+                  <Image src="/images/go_fractional.jpg" alt="GO Fractional logo" width={16} height={16} className="h-4 w-4 rounded-sm object-cover" />
+                  Hire me on GO Fractional
                 </a>
                 <a
                   href={ONE_PAGER_HREF}

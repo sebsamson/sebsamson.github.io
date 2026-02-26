@@ -26,6 +26,7 @@ export const INTRO_CALL_HREF = "mailto:contact@sebsamson.com?subject=Intro%20Cal
 export const ONE_PAGER_HREF = "/pdf/Sebastien_Samson_CV.pdf"
 export const LINKEDIN_HREF = "https://www.linkedin.com/in/sebsamson"
 export const CALENDAR_HREF = "https://calendar.app.google/Aucpd6NmjbAGRBe8A"
+export const GO_FRACTIONAL_HREF = "https://www.gofractional.com/r/sebastien-samson"
 
 export const FOOTER_LEGAL_TEXT =
   "All product names, logos, brands, and images are property of their respective owners and are used here for identification and portfolio purposes only. This site is not affiliated with or endorsed by the respective publishers or rights holders."
@@ -239,6 +240,7 @@ export const CONTACT_CONTENT = {
   directActions: [
     { label: "Contact Me", href: INTRO_CALL_HREF },
     { label: "Schedule via Google Calendar", href: CALENDAR_HREF, external: true },
+    { label: "Hire me on GO Fractional", href: GO_FRACTIONAL_HREF, external: true },
     { label: "Connect on LinkedIn", href: LINKEDIN_HREF, external: true },
     { label: "Download CV", href: ONE_PAGER_HREF },
   ] satisfies ContactAction[],
