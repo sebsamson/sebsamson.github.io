@@ -1,10 +1,10 @@
 import Image from "next/image"
 import type { Metadata } from "next"
-import { CalendarDays, Check } from "lucide-react"
+import { Check } from "lucide-react"
 import { CTAStrip } from "@/components/cta-strip"
 import { SiteFooter } from "@/components/site-footer"
 import { SiteHeader } from "@/components/site-header"
-import { CALENDAR_HREF, GO_FRACTIONAL_HREF, SERVICES_CONTENT, SITE_URL } from "@/content/core-content"
+import { GO_FRACTIONAL_HREF, SERVICES_CONTENT, SITE_URL } from "@/content/core-content"
 
 export const metadata: Metadata = {
   title: "Services",
@@ -43,15 +43,6 @@ export default function ServicesPage() {
                     ))}
                   </ul>
                   <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-                    <a
-                      href={CALENDAR_HREF}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center gap-2 rounded-md border border-border px-5 py-2.5 text-sm font-medium transition-colors hover:bg-secondary"
-                    >
-                      <CalendarDays className="h-4 w-4" />
-                      Schedule a call
-                    </a>
                     <a
                       href={GO_FRACTIONAL_HREF}
                       target="_blank"
