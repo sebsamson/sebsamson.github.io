@@ -7,7 +7,6 @@ import { SiteFooter } from "@/components/site-footer"
 import { SiteHeader } from "@/components/site-header"
 import { EMPLOYERS } from "@/content/employers"
 import {
-  GO_FRACTIONAL_HREF,
   HOME_CONTENT,
   ONE_PAGER_HREF,
   SITE_URL,
@@ -18,7 +17,7 @@ export const metadata: Metadata = {
   title: "Home",
   alternates: { canonical: `${SITE_URL}/` },
   description:
-    "Fractional game direction for vision clarity, roadmap prioritization, and stakeholder alignment.",
+    "Game direction, design leadership, product vision, roadmap clarity, and delivery alignment.",
 }
 
 export default function HomePage() {
@@ -53,21 +52,19 @@ export default function HomePage() {
               <ExperienceBio />
               <div className="flex flex-col gap-4 sm:flex-row">
                 <a
-                  href={GO_FRACTIONAL_HREF}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 rounded-md border border-accent bg-accent px-6 py-3 text-sm font-medium text-accent-foreground transition-opacity hover:opacity-90"
-                >
-                  <Image src="/images/go_fractional.jpg" alt="GO Fractional logo" width={16} height={16} className="h-4 w-4 rounded-sm object-cover" />
-                  Hire me on GO Fractional
-                </a>
-                <a
                   href={ONE_PAGER_HREF}
                   className="inline-flex items-center justify-center gap-2 rounded-md border border-border px-6 py-3 text-sm font-medium transition-colors hover:bg-secondary"
                 >
                   <Download className="h-4 w-4" />
                   Download CV
                 </a>
+                <Link
+                  href="/games"
+                  className="inline-flex items-center justify-center gap-2 rounded-md border border-border px-6 py-3 text-sm font-medium transition-colors hover:bg-secondary"
+                >
+                  View credits
+                  <ArrowRight className="h-4 w-4" />
+                </Link>
               </div>
             </div>
           </div>
@@ -89,12 +86,12 @@ export default function HomePage() {
 
         <section className="border-t border-border/50 bg-secondary/45 py-16">
           <div className="mx-auto max-w-5xl px-6">
-            <h2 className="mb-8 font-serif text-2xl font-semibold md:text-3xl">How I work</h2>
+            <h2 className="mb-8 font-serif text-2xl font-semibold md:text-3xl">Professional focus</h2>
             <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
               {HOME_CONTENT.howIWork.map((service) => (
                 <Link
                   key={service.title}
-                  href="/services"
+                  href="/proof"
                   className="group rounded-lg border border-border bg-card p-6 transition-all duration-200 hover:-translate-y-0.5 hover:border-foreground/25"
                 >
                   <h3 className="mb-3 text-lg font-semibold group-hover:text-accent">{service.title}</h3>
