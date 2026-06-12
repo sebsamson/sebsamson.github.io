@@ -15,7 +15,6 @@ export const SITE_NAME = "Sebastien Samson"
 
 export const NAV_LINKS: NavLink[] = [
   { label: "Home", href: "/" },
-  { label: "Services", href: "/services" },
   { label: "Proof", href: "/proof" },
   { label: "Credits", href: "/games" },
   { label: "Writings", href: "/essays-and-talks" },
@@ -25,36 +24,35 @@ export const NAV_LINKS: NavLink[] = [
 export const INTRO_CALL_HREF = "mailto:contact@sebsamson.com?subject=Contact"
 export const ONE_PAGER_HREF = "/pdf/Sebastien_Samson_CV.pdf"
 export const LINKEDIN_HREF = "https://www.linkedin.com/in/sebsamson"
-export const GO_FRACTIONAL_HREF = "https://www.gofractional.com/r/sebastien-samson"
 
 export const FOOTER_LEGAL_TEXT =
   "All product names, logos, brands, and images are property of their respective owners and are used here for identification and portfolio purposes only. This site is not affiliated with or endorsed by the respective publishers or rights holders."
 
 export const HOME_CONTENT = {
-  heroTitle: "Fractional Game Director for vision clarity and prioritization",
+  heroTitle: "Game Director and Design Leader",
   heroLead:
-    "I help leaders align strategy, sharpen the product promise, and turn priorities into a roadmap teams can ship.",
+    "17+ years shaping games across console, mobile F2P, PC, and VR, with a focus on product vision, design leadership, roadmap clarity, and team alignment.",
   heroImage: {
     src: "/images/Seb_1Mb.jpg",
     alt: "Portrait of Sebastien Samson",
   },
   whatIDo: [
-    "Clarify product vision with explicit player promise, goals, and tradeoff rules.",
-    "Reset priorities into ship-ready roadmaps, cut lists, and ownership clarity.",
-    "Establish decision cadence so cross-discipline teams move faster with less churn.",
+    "Lead product vision, player promise, and design direction across multidisciplinary teams.",
+    "Turn broad goals into roadmaps, priorities, decision rules, and shippable slices.",
+    "Build operating cadence across design, production, product, stakeholders, and leadership.",
   ],
   howIWork: [
     {
-      title: "Vision and Prioritization Reset",
-      summary: "Ten business days to align leadership and produce a roadmap teams can execute.",
+      title: "Product Vision",
+      summary: "Clarifying the player promise, creative pillars, success criteria, and tradeoff rules behind a game.",
     },
     {
-      title: "Execution Alignment Sprint",
-      summary: "Four to six weeks to convert strategy into shippable slices, cadence, and readiness.",
+      title: "Design Leadership",
+      summary: "Guiding designers, producers, and cross-functional partners through prioritization, iteration, and delivery.",
     },
     {
-      title: "Fractional Game Direction",
-      summary: "Ongoing support for weekly priorities, difficult tradeoffs, and executive alignment.",
+      title: "Execution Systems",
+      summary: "Creating practical roadmaps, review cadences, decision logs, and delivery rituals that reduce churn.",
     },
   ] satisfies HomeServiceCard[],
   selectedOutcomes: [
@@ -93,52 +91,50 @@ export const HOME_CONTENT = {
     },
   ],
   closingCta:
-    "Need clarity before your next milestone? I can help you make the next decisions explicit and executable.",
+    "This site collects selected work, outcomes, credits, and writing from my career in game direction and design leadership.",
 }
 
 export const SERVICES_CONTENT = {
-  lead: "Productized support for leaders who need fast clarity, sharper priorities, and delivery rhythm that holds under pressure.",
+  lead: "Professional focus areas from director and manager roles across game teams, live products, and cross-functional delivery.",
   offers: [
     {
-      title: "Vision and Prioritization Reset",
-      duration: "10 business days",
-      useCase: "Use this when vision drift and priority churn are blocking delivery.",
+      title: "Product Vision and Creative Direction",
+      duration: "Leadership focus",
+      useCase: "Defining the player promise, experience pillars, product goals, and practical tradeoff rules that guide a team.",
       deliverables: [
-        "Product promise and north-star goals",
+        "Player promise and north-star goals",
+        "Creative pillars and design constraints",
         "Decision rules for explicit tradeoffs",
-        "Now / Next / Later roadmap",
-        "Cut list with owner clarity",
-        "30/60 day action plan",
-        "Risk and dependency map",
-        "Operating cadence template",
+        "Roadmap clarity and scope boundaries",
+        "Stakeholder alignment materials",
       ],
     },
     {
-      title: "Execution Alignment Sprint",
-      duration: "4 to 6 weeks",
-      useCase: "Use this when teams need concrete slices, tighter reviews, and release readiness.",
+      title: "Design Management and Team Alignment",
+      duration: "Management focus",
+      useCase: "Supporting designers, producers, and cross-discipline partners through prioritization, critique, and delivery rhythm.",
       deliverables: [
-        "Shippable work slices",
-        "Spec pack with acceptance criteria",
+        "Design team leadership",
         "Review cadence and decision checkpoints",
-        "Release readiness checklist",
-        "Stakeholder communication rhythm",
+        "Ownership clarity",
+        "Backlog triage and sequencing",
+        "Cross-functional communication rhythm",
       ],
     },
     {
-      title: "Fractional Game Direction Retainer",
-      duration: "Ongoing",
-      useCase: "Use this when leadership needs recurring decision support and sustained alignment.",
+      title: "Live Product and Retention Systems",
+      duration: "Product focus",
+      useCase: "Connecting player behavior, product goals, and buildable features to improve long-term engagement.",
       deliverables: [
-        "Weekly priority and risk review",
-        "Decision log and tradeoff tracking",
-        "Leadership coaching for leads and producers",
-        "Cross-team alignment support",
-        "Monthly executive readout",
+        "Retention hypothesis framing",
+        "Feature definition and scope boundaries",
+        "Success criteria",
+        "Rollout and iteration loops",
+        "Risk and dependency mapping",
       ],
     },
   ] satisfies ServiceOffer[],
-  closingCta: "Choose the format that matches your current pressure point and timeline.",
+  closingCta: "These areas summarize recurring patterns across my professional work.",
 }
 
 export const PROOF_CONTENT = {
@@ -230,34 +226,33 @@ export const PROOF_CONTENT = {
     },
   ] satisfies Testimonial[],
   closingCta:
-    "If your team needs this level of clarity and prioritization support, send a note and we can map the next step.",
+    "These examples summarize how I approach product clarity, team alignment, and delivery systems in professional game development contexts.",
 }
 
 export const CONTACT_CONTENT = {
   intro:
-    "If you need fast clarity on product direction, roadmap priorities, or leadership alignment, reach out directly.",
+    "Professional links, writing, credits, and CV access for reference.",
   directActions: [
-    { label: "Contact Me", href: INTRO_CALL_HREF },
-    { label: "Hire me on GO Fractional", href: GO_FRACTIONAL_HREF, external: true },
+    { label: "Email", href: INTRO_CALL_HREF },
     { label: "Connect on LinkedIn", href: LINKEDIN_HREF, external: true },
     { label: "Download CV", href: ONE_PAGER_HREF },
   ] satisfies ContactAction[],
   engagementFitChecklist: [
-    "You have a milestone or release window that needs tighter priorities.",
-    "Leadership or cross-discipline alignment is slowing decisions.",
-    "Your roadmap needs explicit tradeoffs, cuts, and ownership.",
-    "You want a lightweight, practical operating cadence that sticks.",
+    "Game direction, design leadership, and product vision.",
+    "Console, mobile F2P, PC, VR, and applied gamification experience.",
+    "Roadmap prioritization, stakeholder alignment, and delivery systems.",
+    "Mentorship, critique, team cadence, and cross-discipline communication.",
   ],
   responseExpectations: [
-    "Initial response with availability and fit questions.",
-    "Direct reply focused on context, constraints, and desired outcomes.",
-    "Recommended engagement format and next-step deliverables.",
+    "This site is maintained as a professional portfolio.",
+    "Current availability is not listed here.",
+    "For background, see credits, proof, writing, LinkedIn, or CV.",
   ],
 }
 
 export const GAMES_CONTENT = {
   intro:
-    "These credits are the operating context behind my current services in vision clarity, prioritization, and execution alignment. They show the environments where I have led teams, reset roadmaps, and supported live delivery.",
+    "These credits are the operating context behind my professional work in vision clarity, prioritization, and execution alignment. They show the environments where I have led teams, reset roadmaps, and supported live delivery.",
 }
 
 export const WRITINGS_CONTENT = {
