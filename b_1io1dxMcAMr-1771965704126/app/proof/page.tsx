@@ -1,8 +1,8 @@
 import type { Metadata } from "next"
-import { CalendarDays, Quote } from "lucide-react"
+import { Quote } from "lucide-react"
 import { SiteFooter } from "@/components/site-footer"
 import { SiteHeader } from "@/components/site-header"
-import { CALENDAR_HREF, PROOF_CONTENT, SITE_URL } from "@/content/core-content"
+import { PROOF_CONTENT, SITE_URL } from "@/content/core-content"
 
 export const metadata: Metadata = {
   title: "Proof",
@@ -91,19 +91,10 @@ export default function ProofPage() {
 
         <section className="border-t border-border/50 py-16">
           <div className="mx-auto max-w-5xl px-6">
-            <div className="flex flex-col gap-4 rounded-lg border border-border bg-card p-8 md:flex-row md:items-center md:justify-between">
+            <div className="rounded-lg border border-border bg-card p-8">
               <p className="max-w-3xl text-pretty text-base leading-relaxed text-muted-foreground md:text-lg">
                 {PROOF_CONTENT.closingCta}
               </p>
-              <a
-                href={CALENDAR_HREF}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 rounded-md border border-border px-5 py-2.5 text-sm font-medium whitespace-nowrap transition-colors hover:bg-secondary"
-              >
-                <CalendarDays className="h-4 w-4" />
-                Schedule a call
-              </a>
             </div>
           </div>
         </section>
