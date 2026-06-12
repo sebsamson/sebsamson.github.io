@@ -1,6 +1,6 @@
 import Image from "next/image"
 import type { Metadata } from "next"
-import { CalendarDays, Download, Mail } from "lucide-react"
+import { Download, Mail } from "lucide-react"
 import { SiteFooter } from "@/components/site-footer"
 import { SiteHeader } from "@/components/site-header"
 import { CONTACT_CONTENT, SITE_URL } from "@/content/core-content"
@@ -25,9 +25,10 @@ export default function ContactPage() {
               <section className="rounded-lg border border-border bg-card p-8">
                 <h2 className="mb-6 text-xl font-semibold">Direct actions</h2>
                 <div className="flex flex-col gap-4">
-                  {CONTACT_CONTENT.directActions.map((action) => {
+                  {CONTACT_CONTENT.directActions
+                    .filter((action) => action.label !== "Schedule via Google Calendar")
+                    .map((action) => {
                     const isLinkedIn = action.label === "Connect on LinkedIn"
-                    const isCalendar = action.label === "Schedule via Google Calendar"
                     const isGoFractional = action.label === "Hire me on GO Fractional"
                     const icon = isLinkedIn ? (
                       <Image
@@ -45,8 +46,6 @@ export default function ContactPage() {
                         height={16}
                         className="h-4 w-4 rounded-sm object-cover"
                       />
-                    ) : isCalendar ? (
-                      <CalendarDays className="h-4 w-4" />
                     ) : action.label === "Download CV" ? (
                       <Download className="h-4 w-4" />
                     ) : (
