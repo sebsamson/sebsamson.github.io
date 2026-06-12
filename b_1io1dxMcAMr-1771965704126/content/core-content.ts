@@ -1,4 +1,4 @@
-﻿import type {
+import type {
   ContactAction,
   HomeServiceCard,
   NavLink,
@@ -22,10 +22,9 @@ export const NAV_LINKS: NavLink[] = [
   { label: "Contact", href: "/contact" },
 ]
 
-export const INTRO_CALL_HREF = "mailto:contact@sebsamson.com?subject=Intro%20Call"
+export const INTRO_CALL_HREF = "mailto:contact@sebsamson.com?subject=Contact"
 export const ONE_PAGER_HREF = "/pdf/Sebastien_Samson_CV.pdf"
 export const LINKEDIN_HREF = "https://www.linkedin.com/in/sebsamson"
-export const CALENDAR_HREF = "https://calendar.app.google/Aucpd6NmjbAGRBe8A"
 export const GO_FRACTIONAL_HREF = "https://www.gofractional.com/r/sebastien-samson"
 
 export const FOOTER_LEGAL_TEXT =
@@ -231,7 +230,7 @@ export const PROOF_CONTENT = {
     },
   ] satisfies Testimonial[],
   closingCta:
-    "If your team needs this level of clarity and prioritization support, we can map your next step in one intro call.",
+    "If your team needs this level of clarity and prioritization support, send a note and we can map the next step.",
 }
 
 export const CONTACT_CONTENT = {
@@ -239,7 +238,6 @@ export const CONTACT_CONTENT = {
     "If you need fast clarity on product direction, roadmap priorities, or leadership alignment, reach out directly.",
   directActions: [
     { label: "Contact Me", href: INTRO_CALL_HREF },
-    { label: "Schedule via Google Calendar", href: CALENDAR_HREF, external: true },
     { label: "Hire me on GO Fractional", href: GO_FRACTIONAL_HREF, external: true },
     { label: "Connect on LinkedIn", href: LINKEDIN_HREF, external: true },
     { label: "Download CV", href: ONE_PAGER_HREF },
@@ -252,7 +250,7 @@ export const CONTACT_CONTENT = {
   ],
   responseExpectations: [
     "Initial response with availability and fit questions.",
-    "Intro call focused on context, constraints, and desired outcomes.",
+    "Direct reply focused on context, constraints, and desired outcomes.",
     "Recommended engagement format and next-step deliverables.",
   ],
 }
