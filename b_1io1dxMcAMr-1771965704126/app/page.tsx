@@ -1,13 +1,12 @@
-﻿import Image from "next/image"
+import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight, CalendarDays, Download } from "lucide-react"
+import { ArrowRight, Download } from "lucide-react"
 import { CTAStrip } from "@/components/cta-strip"
 import { ExperienceBio } from "@/components/experience-bio"
 import { SiteFooter } from "@/components/site-footer"
 import { SiteHeader } from "@/components/site-header"
 import { EMPLOYERS } from "@/content/employers"
 import {
-  CALENDAR_HREF,
   GO_FRACTIONAL_HREF,
   HOME_CONTENT,
   ONE_PAGER_HREF,
@@ -53,16 +52,6 @@ export default function HomePage() {
               </p>
               <ExperienceBio />
               <div className="flex flex-col gap-4 sm:flex-row">
-                <a
-                  href={CALENDAR_HREF}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 rounded-md bg-foreground px-6 py-3 text-sm font-medium text-background transition-transform duration-200 hover:-translate-y-0.5"
-                >
-                  <CalendarDays className="h-4 w-4" />
-                  Schedule a call
-                  <ArrowRight className="h-4 w-4" />
-                </a>
                 <a
                   href={GO_FRACTIONAL_HREF}
                   target="_blank"
