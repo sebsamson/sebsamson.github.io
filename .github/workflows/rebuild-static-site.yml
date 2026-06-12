@@ -1,0 +1,50 @@
+name: Rebuild static site
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'b_1io1dxMcAMr-1771965704126/**'
+      - '.github/workflows/rebuild-static-site.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  rebuild:
+    if: ${{ github.actor != 'github-actions[bot]' }}
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: b_1io1dxMcAMr-1771965704126
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build and publish static files
+        run: npm run deploy:root
+
+      - name: Commit rebuilt static site
+        working-directory: .
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet; then
+            echo "No generated changes to commit."
+            exit 0
+          fi
+          git add -A
+          git commit -m "Rebuild static site"
+          git push
