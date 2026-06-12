@@ -1,7 +1,6 @@
 import Image from "next/image"
-import { CalendarDays, Download, Mail } from "lucide-react"
+import { Download, Mail } from "lucide-react"
 import {
-  CALENDAR_HREF,
   FOOTER_LEGAL_TEXT,
   GO_FRACTIONAL_HREF,
   INTRO_CALL_HREF,
@@ -20,15 +19,6 @@ export function SiteFooter() {
           >
             <Mail className="h-4 w-4" />
             Contact Me
-          </a>
-          <a
-            href={CALENDAR_HREF}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-md border border-border px-5 py-2.5 text-sm font-medium transition-colors hover:bg-secondary"
-          >
-            <CalendarDays className="h-4 w-4" />
-            Schedule a call
           </a>
           <a
             href={GO_FRACTIONAL_HREF}
