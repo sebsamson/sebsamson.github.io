@@ -8,7 +8,7 @@ import { CONTACT_CONTENT, SITE_URL } from "@/content/core-content"
 export const metadata: Metadata = {
   title: "Contact",
   alternates: { canonical: `${SITE_URL}/contact/` },
-  description: "Contact Sebastien Samson for fractional game direction support.",
+  description: "Professional links for Sebastien Samson.",
 }
 
 export default function ContactPage() {
@@ -23,13 +23,10 @@ export default function ContactPage() {
 
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
               <section className="rounded-lg border border-border bg-card p-8">
-                <h2 className="mb-6 text-xl font-semibold">Direct actions</h2>
+                <h2 className="mb-6 text-xl font-semibold">Professional links</h2>
                 <div className="flex flex-col gap-4">
-                  {CONTACT_CONTENT.directActions
-                    .filter((action) => action.label !== "Schedule via Google Calendar")
-                    .map((action) => {
+                  {CONTACT_CONTENT.directActions.map((action) => {
                     const isLinkedIn = action.label === "Connect on LinkedIn"
-                    const isGoFractional = action.label === "Hire me on GO Fractional"
                     const icon = isLinkedIn ? (
                       <Image
                         src="/images/LinkedIn_icon.png"
@@ -37,14 +34,6 @@ export default function ContactPage() {
                         width={16}
                         height={16}
                         className="h-4 w-4 object-contain"
-                      />
-                    ) : isGoFractional ? (
-                      <Image
-                        src="/images/go_fractional.jpg"
-                        alt="GO Fractional logo"
-                        width={16}
-                        height={16}
-                        className="h-4 w-4 rounded-sm object-cover"
                       />
                     ) : action.label === "Download CV" ? (
                       <Download className="h-4 w-4" />
@@ -58,11 +47,7 @@ export default function ContactPage() {
                         href={action.href}
                         target={action.external ? "_blank" : undefined}
                         rel={action.external ? "noopener noreferrer" : undefined}
-                        className={
-                          isGoFractional
-                            ? "inline-flex items-center gap-3 rounded-md border border-accent bg-accent px-5 py-3 text-sm font-medium text-accent-foreground transition-opacity hover:opacity-90"
-                            : "inline-flex items-center gap-3 rounded-md border border-border px-5 py-3 text-sm font-medium transition-colors hover:bg-secondary"
-                        }
+                        className="inline-flex items-center gap-3 rounded-md border border-border px-5 py-3 text-sm font-medium transition-colors hover:bg-secondary"
                       >
                         {icon}
                         {action.label}
@@ -74,7 +59,7 @@ export default function ContactPage() {
 
               <div className="flex flex-col gap-8">
                 <section className="rounded-lg border border-border bg-card p-8">
-                  <h2 className="mb-4 text-xl font-semibold">Engagement fit checklist</h2>
+                  <h2 className="mb-4 text-xl font-semibold">Professional snapshot</h2>
                   <ul className="space-y-3">
                     {CONTACT_CONTENT.engagementFitChecklist.map((item) => (
                       <li key={item} className="flex items-start gap-3 text-sm leading-relaxed text-muted-foreground">
@@ -86,7 +71,7 @@ export default function ContactPage() {
                 </section>
 
                 <section className="rounded-lg border border-border bg-card p-8">
-                  <h2 className="mb-4 text-xl font-semibold">Response expectations</h2>
+                  <h2 className="mb-4 text-xl font-semibold">Site note</h2>
                   <ul className="space-y-3">
                     {CONTACT_CONTENT.responseExpectations.map((item) => (
                       <li key={item} className="flex items-start gap-3 text-sm leading-relaxed text-muted-foreground">
