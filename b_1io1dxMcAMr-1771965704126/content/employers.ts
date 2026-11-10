@@ -19,6 +19,32 @@ export const EMPLOYERS: EmployerEntry[] = [
     ],
   },
   {
+    company: "Fortis Games",
+    logoSrc: "/images/logos/fortis.svg",
+    logoAlt: "Fortis Games monogram",
+    rolePeriod: "2026-Nov 2026 - Game Design Manager",
+    intro:
+      "Managed game design on the studio's flagship title, leading a team of designers and contributing directly to feature execution.",
+    items: [
+      {
+        label:
+          "Led the design team through priorities, feedback, and quality reviews on the studio's largest title.",
+      },
+      {
+        label:
+          "Partnered with the Game Director and Product Director to align product strategy, game vision, and design tradeoffs.",
+      },
+      {
+        label:
+          "Worked hands-on on feature integration, playable prototypes, concept pitches, and combat and economy balancing.",
+      },
+      {
+        label:
+          "Built deep practical knowledge of AI-assisted workflows, identifying effective uses, limitations, and adoption practices that improve team velocity and output while keeping quality central.",
+      },
+    ],
+  },
+  {
     company: "Kluge Interactive",
     logoSrc: "/images/logos/kluge.png",
     logoAlt: "Kluge Interactive logo",
