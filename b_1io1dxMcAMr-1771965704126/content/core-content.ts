@@ -31,7 +31,7 @@ export const FOOTER_LEGAL_TEXT =
 export const HOME_CONTENT = {
   heroTitle: "Game Director and Design Leader",
   heroLead:
-    "17+ years shaping games across console, mobile F2P, PC, and VR, with a focus on product vision, design leadership, roadmap clarity, and team alignment.",
+    "18+ years shaping games across console, mobile F2P, PC, and VR, with a focus on product vision, design leadership, roadmap clarity, and team alignment.",
   heroImage: {
     src: "/images/Seb_1Mb.jpg",
     alt: "Portrait of Sebastien Samson",
