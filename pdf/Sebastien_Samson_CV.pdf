@@ -1,5 +1,5 @@
 %PDF-1.4
-% Generated for sebsamson.com
+% Updated Fortis and fractional consulting dates
 1 0 obj
 << /Type /Catalog /Pages 2 0 R >>
 endobj
@@ -16,7 +16,7 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /FR 3 0 R /FB 4 0 R >> >> /Contents 6 0 R >>
 endobj
 6 0 obj
-<< /Length 4465 >>
+<< /Length 4470 >>
 stream
 BT /FB 19 Tf 0.09 0.27 0.39 rg 1 0 0 1 48 744.0 Tm (SEBASTIEN SAMSON) Tj ET
 BT /FR 8.4 Tf 0.33 0.38 0.44 rg 1 0 0 1 48 723.0 Tm (Toronto, Canada \(Remote\)  |  contact@sebsamson.com  |  sebsamson.com  |  linkedin.com/in/sebsamson) Tj ET
@@ -38,7 +38,7 @@ BT /FR 9.2 Tf 0.12 0.16 0.20 rg 1 0 0 1 48 450.7 Tm (Bigpoint. Hands-on design o
 BT /FB 10.6 Tf 0.09 0.27 0.39 rg 1 0 0 1 48 427.0 Tm (PROFESSIONAL EXPERIENCE) Tj ET
 q 0.81 0.85 0.88 RG 0.7 w 48 418.0 m 564 418.0 l S Q
 BT /FB 10.6 Tf 0.12 0.16 0.20 rg 1 0 0 1 48 389.0 Tm (Sebastien Samson Consulting  |  Principal Consultant / Fractional Game Director) Tj ET
-BT /FR 9 Tf 0.33 0.38 0.44 rg 1 0 0 1 48 374.0 Tm (Jan 2026 to Present  |  Remote, Toronto) Tj ET
+BT /FR 9 Tf 0.33 0.38 0.44 rg 1 0 0 1 48 374.0 Tm (Jan 2026 to Jun 2026  |  Remote, Toronto) Tj ET
 BT /FR 9.2 Tf 0.12 0.16 0.20 rg 1 0 0 1 52 356.0 Tm (-  Support studios with product vision, priority resets, roadmaps, and decision workshops.) Tj ET
 BT /FR 9.2 Tf 0.12 0.16 0.20 rg 1 0 0 1 52 339.8 Tm (-  Translate strategy into executable plans with clear scope, ownership, risks, and milestones.) Tj ET
 BT /FR 9.2 Tf 0.12 0.16 0.20 rg 1 0 0 1 52 323.6 Tm (-  Work with product and analytics to frame retention and engagement experiments.) Tj ET
@@ -48,7 +48,7 @@ BT /FR 9 Tf 0.33 0.38 0.44 rg 1 0 0 1 48 266.2 Tm (Jan 2026 to Present  |  Remot
 BT /FR 9.2 Tf 0.12 0.16 0.20 rg 1 0 0 1 52 248.2 Tm (-  Founded a studio exploring creative work enabled by emerging technologies.) Tj ET
 BT /FR 9.2 Tf 0.12 0.16 0.20 rg 1 0 0 1 52 232.0 Tm (-  Set creative direction and prototype approach for VR/PC, Unreal, UGC, and Gaussian Splatting.) Tj ET
 BT /FB 10.6 Tf 0.12 0.16 0.20 rg 1 0 0 1 48 205.8 Tm (Fortis Games  |  Game Design Manager) Tj ET
-BT /FR 9 Tf 0.33 0.38 0.44 rg 1 0 0 1 48 190.8 Tm (2026 to Nov 2026  |  Remote) Tj ET
+BT /FR 9 Tf 0.33 0.38 0.44 rg 1 0 0 1 48 190.8 Tm (Jun 2026 to Nov 2026  |  Remote) Tj ET
 BT /FR 9.2 Tf 0.12 0.16 0.20 rg 1 0 0 1 52 172.8 Tm (-  Led the game design team on the studio's flagship title, guiding priorities, feedback, and design quality.) Tj ET
 BT /FR 9.2 Tf 0.12 0.16 0.20 rg 1 0 0 1 52 156.6 Tm (-  Partnered with the Game Director and Product Director to align strategic product and design decisions.) Tj ET
 BT /FR 9.2 Tf 0.12 0.16 0.20 rg 1 0 0 1 52 140.4 Tm (-  Stayed hands-on with integration, prototype and concept pitches, and combat and economy balancing.) Tj ET
@@ -130,18 +130,18 @@ endobj
 xref
 0 11
 0000000000 65535 f 
-0000000039 00000 n 
-0000000088 00000 n 
-0000000157 00000 n 
-0000000254 00000 n 
-0000000356 00000 n 
-0000000492 00000 n 
-0000005009 00000 n 
-0000005145 00000 n 
-0000009557 00000 n 
-0000009694 00000 n 
+0000000058 00000 n 
+0000000107 00000 n 
+0000000176 00000 n 
+0000000273 00000 n 
+0000000375 00000 n 
+0000000511 00000 n 
+0000005033 00000 n 
+0000005169 00000 n 
+0000009581 00000 n 
+0000009718 00000 n 
 trailer
 << /Size 11 /Root 1 0 R >>
 startxref
-11846
+11870
 %%EOF

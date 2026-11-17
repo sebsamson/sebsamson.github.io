@@ -22,7 +22,7 @@ export const EMPLOYERS: EmployerEntry[] = [
     company: "Fortis Games",
     logoSrc: "/images/logos/fortis.svg",
     logoAlt: "Fortis Games monogram",
-    rolePeriod: "2026-Nov 2026 - Game Design Manager",
+    rolePeriod: "Jun 2026-Nov 2026 - Game Design Manager",
     intro:
       "Managed game design on the studio's flagship title, leading a team of designers and contributing directly to feature execution.",
     items: [
